@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CANVAS...CONTD</title>
+<link rel="shortcut icon" href="GrooveIcon.ico" type="image/icon"/>
+<script type="text/javascript">
+function drawFig()
+{
+	can = document.getElementById("can");
+	//Get the brush
+	cont = can.getContext("2d");
+		
+	cont.fillStyle = "red";
+	cont.font="20px Arial";
+	cont.textAlign = "center";
+	cont.fillText("Yo !", 100,100);
+	
+	cont.fill();
+
+}
+</script>
+</head>
+<body>
+<canvas id="can" width="600" height="400" style="border:2px solid red;"></canvas>
+<p><input type="button" value="DRAW SOMETHING" onclick="drawFig()"/>
+</body>
+</html>
